@@ -1,0 +1,86 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202124;
+}
+
+#root {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: #eff6ff;
+  gap: 14px;
+}
+
+header {
+ 
+  display: block;
+  align-items: stretch;
+}
+
+header input{
+
+  height: 30px;
+  border-radius: 10px;
+  border-style: none;
+  border: 1px solid gray;
+  margin: 0px 10px;
+}
+
+header button{
+
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  background: linear-gradient(to left,rgb(253, 185, 97) 50%, rgb(255, 162, 41) 50%) right;
+  background-size: 200% ;
+  transition: .5s;
+  cursor: pointer;
+}
+
+header button:hover{
+
+  background-position: left;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 14px;
+  padding: 10px;
+  border-radius: 14px;
+  background: white;
+}
+
+.todoItem p {
+  flex: 1;
+}
+
+.actionsContainer {
+
+  display: inline-block;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  transition-duration: 200ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
